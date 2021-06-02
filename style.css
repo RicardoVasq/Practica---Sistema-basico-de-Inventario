@@ -1,0 +1,397 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(./imagen_fondo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+}
+.titulo{
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+/* TABLA */
+.table {
+    width: 60%;
+    /* margin-left: 30px; */
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    overflow-y: scroll;
+}
+ .pie_datos {
+     margin-top: 0px;
+ }
+
+ .table table{
+     min-width: 30%;
+     flex-basis: 70%;
+     align-content: center;
+     border-collapse: collapse;
+     text-align: left;
+     max-height: 10%;
+     overflow-y: scroll;
+ }
+
+ .table th, td{
+    padding: 20px;
+    }
+    
+.table th{
+    background-color: #1f2020;
+    border-bottom: solid 5px;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:nth-child(odd){
+    background-attachment: rgb(36, 51, 47);
+    color: white;
+}
+
+/* PIE DE PAGINA - DATOS TOTALES */
+.info_general{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 5%;
+    height: 50px;
+}
+
+.datos_generales{
+    min-width: 30%;
+    width: 40%;
+    align-content: left;
+    text-align: left;
+    color: white;
+}
+
+.div_totales{
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: rgba(43, 44, 44, 0.603);
+    color: white;
+    width: 55%;
+
+} 
+
+
+/* FORMULARIO PRINCIPAL */
+.menu_principal{
+    display: flex; 
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(32, 34, 34);
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu_principal button{
+    /* min-width: 20px; */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    align-content: center;
+    width: 90px;
+    padding: 3px;
+
+    background-color: rgb(32, 34, 34); 
+    border:none;
+    color: white;
+    border: 1px solid white;
+}
+.menu_principal button:hover{
+    background-color: rgb(34, 153, 153); 
+    border:none;
+    color: white;
+    border: white, solid, 2px;
+    border: 1px solid  rgb(34, 153, 153);
+}
+
+/* FOMRULARIO INGRESO */
+
+.Ingreso {
+    display: flex; 
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(32, 34, 34);
+    color: white;
+    justify-content: center;
+    text-align: center;
+} 
+
+.Ingreso button{
+    min-width: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex-basis: 90px;
+    padding: 3px;
+
+    background-color: rgb(32, 34, 34); 
+    border:none;
+    color: white;
+    border: 1px solid white;
+
+}
+.Ingreso button:hover {
+    background-color: rgb(34, 153, 153); 
+    border:none;
+    color: white;
+    border: 1px solid  rgb(34, 153, 153);
+}
+
+.Ingreso p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Ingreso input{
+    flex-basis: 166px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.Ingreso h3{
+    margin-top: 10px;
+}
+
+
+/* FORMULARIO EDITAR */
+.Editar {
+    display: flex; 
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(32, 34, 34);
+    color: white;
+    justify-content: center;
+    text-align: center;
+} 
+
+.Editar button{
+    min-width: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex-basis: 90px;
+    padding: 3px;
+
+    background-color: rgb(32, 34, 34); 
+    border:none;
+    color: white;
+    border: 1px solid white;
+}
+
+.Editar button:hover {
+    background-color: rgb(34, 153, 153); 
+    border:none;
+    color: white;
+    border: 1px solid  rgb(34, 153, 153);
+}
+
+
+.Editar p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Editar input{
+    flex-basis: 166px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.Editar h3{
+    margin-top: 10px;
+}
+
+.Editar_2 {
+    display: flex; 
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(32, 34, 34);
+    color: white;
+    justify-content: center;
+    text-align: center;
+} 
+
+.Editar_2 button{
+    min-width: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex-basis: 90px;
+    padding: 3px;
+
+    background-color: rgb(32, 34, 34); 
+    border:none;
+    color: white;
+    border: 1px solid white;
+}
+
+.Editar_2 button:hover {
+    background-color: rgb(34, 153, 153); 
+    border:none;
+    color: white;
+    border: 1px solid  rgb(34, 153, 153);
+}
+
+.Editar_2 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Editar_2 input{
+    flex-basis: 166px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.Editar_2 h3{
+    margin-top: 10px;
+}
+
+.Editar_3 {
+    display: flex; 
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(32, 34, 34);
+    color: white;
+    justify-content: center;
+    text-align: center;
+} 
+
+.Editar_3 button{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    align-content: center;
+    width: 90px;
+    padding: 3px;
+
+    background-color: rgb(32, 34, 34); 
+    border:none;
+    color: white;
+    border: 1px solid white;
+}
+
+.Editar_3 button:hover{
+    background-color: rgb(34, 153, 153); 
+    border:none;
+    color: white;
+    border: 1px solid  rgb(34, 153, 153);
+}
+
+.Editar_3 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Editar_3 input{
+    flex-basis: 166px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.Editar_3 h3{
+    margin-top: 10px;
+}
+
+
+/* FORMULARIO BORRAR */
+.Borrar {
+    display: flex; 
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(32, 34, 34);
+    color: white;
+    justify-content: center;
+    text-align: center;
+} 
+
+.Borrar button{
+    min-width: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex-basis: 90px;
+    padding: 3px;
+
+    background-color: rgb(32, 34, 34); 
+    border:none;
+    color: white;
+    border: 1px solid white;
+}
+
+.Borrar button:hover{
+    background-color: rgb(34, 153, 153); 
+    border:none;
+    color: white;
+    border: 1px solid  rgb(34, 153, 153);
+}
+
+.Borrar p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Borrar input{
+    flex-basis: 166px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.Borrar h3{
+    margin-top: 10px;
+}
+
+
+
+/* AQUI VAN LOS DISPLAY NONE DE LOS DIV DE FORMULARIOS */
+
+#div_ingreso{
+    display: none;
+}
+
+#div_Editar {
+    display: none;
+}
+
+#div_Borrar {
+    display: none;
+}
+
+#div_Editar2{
+    display: none;
+}
+
+#div_Editar3{
+    display: none;
+}

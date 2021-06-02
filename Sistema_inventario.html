@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</head>
+
+<body>
+    <script src="inventario.js"></script>
+    <div class="titulo">
+        <h1> Sistema de Inventario</h1>
+    </div>
+
+<div class="contenedor">
+
+    <div class="menu_principal" id="div_principal">
+            <h3> ¿Qué Desea realizar? </h3>
+            <button id="principal_ingreso" class="menú_ingreso">Ingresar</button>
+            <button id="principal_Editar" class="menú_Editar">Editar</button>
+            <button id="principal_Borrar" class="menú_Borrar">Borrar</button>
+    </div>
+    <div class="Ingreso" id="div_ingreso">
+        <h3>Datos</h3>
+        <div>
+            <p>Fecha: </p>
+            <input type="date" class="form_fecha" id="input_fecha" placeholder="Digite la fecha de hoy">
+            <p>Codigo del elemento:</p>
+            <input type="text" class="codigo" id="input_codigo" placeholder="Codigo del item">
+            <P>Elemento: </P>
+            <input type="text" class="Elemento" id="input_elemento" placeholder="Nombre del elemento">
+            <p>Costo: </p>
+            <input type="number" class="Costo" id="input_costo" step="0.1" placeholder="Costo del elemento">
+        </div>
+        <div>
+            <button id="buton_ingreso" onclick="ingreso()">Ingresar</button>
+            <button id="buton_Regresar_ingreso" >Regresar</button>
+        </div>
+    </div>
+
+    <div class="Editar" id="div_Editar">
+        <h3>Datos</h3>
+        <div>
+            <p>Codigo del elemento:</p>
+            <input type="text" class="codigo" id="input_codigo_editar" placeholder="Codigo del producto">
+            <div>
+                <button id="buton_editar" onclick="confirmar_editar()">Editar</button>
+                <button id="buton_Regresar_Editar" >Regresar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Editar_2" id="div_Editar2">
+        <h3>Datos</h3>
+        <p>Digite los cambios que desea realizar:</p>
+        <div>
+            <P>Elemento: </P>
+            <input type="text" class="Elemento" id="input_elemento_editar" placeholder="Nombre del elemento">
+            <p>Costo: </p>
+            <input type="number" class="Costo" id="input_costo_editar" step="0.1" placeholder="Costo del elemento">
+            <div>
+            <button id="button_editar2" onclick="editar()">Editar</button>
+            <button id="button_editar2_regresar">Regresar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Editar_3" id="div_Editar3">
+        <h3 class="h3_editar3" id="h3_editar3"></h3>
+        <button class="button_editar3" id="button_Editar3"> Confirmar</button>
+        <button class="button_regresar_editar3" id="button_regresar_editar3"> Cancelar </button>
+    </div>
+    <div class="Borrar" id="div_Borrar">
+        <h3>Datos</h3>
+        <p>Digite el codigo del Item a eliminar</p>
+        <div>
+            <p>Codigo del elemento:</p>
+            <input type="text" class="codigo" id="input_codigo_borrar" placeholder="Codigo del producto">
+            <div>
+                <button id="buton_borrar" onclick="Borrar()">Borrar</button>
+                <button id="buton_Regresar_Borrar" >Regresar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table" id="div_table">
+        <table class="invent" id="tabla_contener">
+            <tr class="invent_encabezado"  id="invent_encabezado">
+                <th>Codigo</th>
+                <th>Elemento</th>
+                <th>Costo</th>
+                <th>Fecha</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="info_general" class ="info_general" class="pie_datos">
+        <div id="datos" class="datos_generales">
+            <h5>Ricardo Alberto Vásquez Castillo</h5>
+            <p>Hora actual: <b id="tiempo"></b>
+            <p> Fecha actual: <b id=fecha></b> </p></p>
+        </div>
+
+        <div id="totales" class="div_totales">
+            <p>Total de items ingresados es: <b id="totales_items">No se ha ingresado ningun item</b></p>
+            <p>Costo total de los items ingresados: <b id="total_costo">No se ha ingresado ningun item</b></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
